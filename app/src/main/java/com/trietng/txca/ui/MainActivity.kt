@@ -24,7 +24,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             val navController = rememberNavController()
-            TxcaTheme {
+            TxcaTheme(
+                dynamicColor = false
+            ) {
                 MainControl(
                     onNavigateToMonthly = {
                         navController.navigate(Monthly())

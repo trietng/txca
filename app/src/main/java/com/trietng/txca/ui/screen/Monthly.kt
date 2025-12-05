@@ -13,5 +13,7 @@ data class Monthly(
 fun MonthlyScreen(
     title: String
 ) {
-    ExpenseLayout(title) { }
+    ExpenseLayout(title) {
+
+    }
 }
